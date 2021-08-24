@@ -1,0 +1,23 @@
+STEPS TO PLAY BACKGAMMON:
+
+1. Setup board
+2. Roll one die to determine who goes first
+3. Each player moves
+    a. Roll two die
+    b. Select the first checker to move; if there are any checkers on the board, it must be one of these
+    c. Given the selected checker's position, and each die's roll value, determine whether or not a move can be made
+    d. Visually indicate the moves available to this player's selected checker and their corresponding die roll
+    e. If no moves are available for the given checker, repeat steps 3b-3d until possible
+    f. If no moves are available for any checker, the given player forfeits their turn
+    g. Otherwise, repeat steps 3b-3f for the second selected checker
+
+Things to check:
+    1. If a dice roll of two die are given, both values are different; if a roll of four die are given, all values are
+    the same.
+    2. Unless two die of the same value are rolled, a turn can only contain up to 2 cpos pairs; otherwise, it may contain
+    up to 4 cpos pairs.
+    3. That a move begins at a position with at least one checker of the given color
+    4. That a move ends at a position with no more than one checker of the other color
+    5. That a move begins and ends at positions with a difference no greater than 6
+    6. That a turn is comprised of moves from the board for as long as there is at least one checker of the given color
+    on the board
