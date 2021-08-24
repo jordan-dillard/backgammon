@@ -1,0 +1,2 @@
+Main-Class: edu.northwestern.threeninethree.backgammon.TestDriver8
+Class-Path: json-simple-1.1.1.jar
